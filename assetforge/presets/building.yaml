@@ -1,0 +1,14 @@
+# Building / architecture — static, higher mesh detail for hard edges
+mesh_backend: hunyuan3d
+octree_resolution: 384
+voxel_threshold: 0.55
+ksampler_steps: 30
+
+target_faces: 250000   # decimate in cleanup (quality + big UV-unwrap speedup)
+texture_size: 2048   # kept square (back_project row-major bug)
+paint_resolution: 512
+paint_steps: 10
+paint_guidance: 3.0
+camera_azims: [0, 90, 180, 270, 0, 180]
+camera_elevs: [0, 0, 0, 0, 90, -90]
+view_weights: [1, 0.3, 0.7, 0.3, 0.1, 0.05]

@@ -1,0 +1,25 @@
+[project]
+name = "assetforge"
+version = "0.1.0"
+description = "Local image-to-3D production asset pipeline for AMD Strix Halo (gfx1151/ROCm)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pillow",
+    "requests",
+    "pyyaml",
+    "trimesh",
+]
+
+[project.scripts]
+assetforge = "assetforge.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["assetforge*"]
+
+[tool.setuptools.package-data]
+assetforge = ["comfy_graphs/*.json", "presets/*.yaml", "blender_scripts/*.py"]

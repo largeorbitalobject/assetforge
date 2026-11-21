@@ -1,0 +1,16 @@
+# Creature / person — full path: mesh -> cleanup -> texture -> rig -> animate -> export
+mesh_backend: hunyuan3d
+octree_resolution: 256
+voxel_threshold: 0.6
+ksampler_steps: 30
+
+target_faces: 200000   # decimate in cleanup (quality + big UV-unwrap speedup)
+
+texture_size: 1024
+paint_resolution: 512
+paint_steps: 10
+paint_guidance: 3.0
+# 6 standard views: front, sides, back, top, bottom (front weighted highest)
+camera_azims: [0, 90, 180, 270, 0, 180]
+camera_elevs: [0, 0, 0, 0, 90, -90]
+view_weights: [1, 0.1, 0.5, 0.1, 0.05, 0.05]

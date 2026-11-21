@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+
+# run outputs (kept out of git; examples/ is curated by hand)
+assets/runs/
+*.npz
+
+# large weights never belong in git
+*.safetensors
+*.ckpt
+*.pth
+*.bin
+
+# downloaded SFX libraries (large, not source)
+assets/audio/library/
+assets/
+.claude/
+*.glb
+*.mp4

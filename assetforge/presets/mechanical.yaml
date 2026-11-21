@@ -1,0 +1,12 @@
+# Mechanical / articulated object (turret, door, drawer, lamp, crane)
+mesh_backend: hunyuan3d
+octree_resolution: 256
+voxel_threshold: 0.6
+ksampler_steps: 30
+target_faces: 200000
+texture_size: 1024
+paint_resolution: 512
+paint_steps: 10
+paint_guidance: 3.0
+part_segmenter: sam3_lift
+vlm_endpoint: http://localhost:8100/v1
